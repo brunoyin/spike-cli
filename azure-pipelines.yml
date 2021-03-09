@@ -34,7 +34,7 @@ steps:
         curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
         dep ensure
     fi
-    env GOOS=linux go build -v .
+    // env GOOS=linux go build -v .
     env GOOS=windows go build -v .
   workingDirectory: '$(modulePath)'
   displayName: 'Get dependencies, then build'
