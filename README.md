@@ -12,7 +12,6 @@ spike-cli is a single binary that runs on both on Linux and Windows with no depe
 ### build and testing
 ```bash
 # In Linux
-go mod init github.com/brunoyin/testaero
 go get github.com/aerospike/aerospike-client-go
 
 env GOOS=linux go build
