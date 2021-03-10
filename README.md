@@ -38,7 +38,7 @@ $env:GOOS = 'windows'; go build
 ```
 
 ### Usage
-
+```powershell
 .\spike-cli.exe -h
 
 Usage of spike-cli.exe:
@@ -82,6 +82,7 @@ Usage of spike-cli.exe:
         Aerospike user name
   -password string
         Aerospike password
+```
 
 ### info
 
