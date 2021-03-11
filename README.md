@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/brunoyin0111/brunoyin/_apis/build/status/brunoyin.spike-cli?branchName=main)](https://dev.azure.com/brunoyin0111/brunoyin/_build/latest?definitionId=2&branchName=main)
 ## spike-cli: a simple command line tool for Aerospike server
 
 Aerospike does not come with a good GUI management tool. And it does not have anything for Windows.
