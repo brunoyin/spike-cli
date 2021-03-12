@@ -86,8 +86,10 @@ func LoadData(client *aero.Client, wpolicy *aero.WritePolicy, fileName string, s
 }
 
 // Info runs asinfo command
-func Info(clientPolicy *aero.ClientPolicy, host string, port int, asinfo string) {
-	conn, err := aero.NewConnection(clientPolicy, aero.NewHost(host, port))
+func Info(client *aero.Client, host string, port int, asinfo string) {
+	// conn, err := aero.NewConnection(clientPolicy, aero.NewHost(host, port))
+	// need to call Connection.Authenticate to log in, Client authenticate automatically when ClientPolicy has User/Password
+	conn, err := client.GetNodes()[0].GetConnection(15 * time.Second)
 	if err != nil {
 		log.Fatalln(err.Error())
 	}

@@ -64,7 +64,7 @@ func main() {
 	switch *action {
 	case "info":
 		fmt.Println("Running asinfo ...")
-		spikeutils.Info(clientPolicy, host, port, asinfoCmd)
+		spikeutils.Info(client, host, port, asinfoCmd)
 	case "scan":
 		fmt.Printf("Running scan on %s\n", namespace)
 		spikeutils.Scan(client, namespace, setName)
